@@ -32,6 +32,7 @@ public class ItemCatController {
 		
 		
 		try {
+			
 			List<ItemCat> list = itemCatService.queryItemCatByParentId(parentId);		
 			return ResponseEntity.status(HttpStatus.OK).body(list);
 		} catch (Exception e) {
